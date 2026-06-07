@@ -204,6 +204,18 @@ background:#2563EB;
 color:white;
 border-color:#2563EB;
 }
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav { flex-direction: column; gap: 16px; padding: 16px 5%; }
+  nav ul { gap: 16px; flex-wrap: wrap; justify-content: center; }
+
+  .nosotros-hero { grid-template-columns: 1fr; padding: 40px 5%; gap: 30px; }
+  .hero-text h1 { font-size: 36px; }
+  .hero-img { height: 220px; }
+
+  .nosotros-contenido { padding: 40px 5%; margin: 0 10px; }
+  .mv-grid { grid-template-columns: 1fr; }
+}
 
 footer{
 background:#1E3A8A;

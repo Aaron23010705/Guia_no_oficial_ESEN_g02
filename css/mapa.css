@@ -138,6 +138,16 @@ background:#2563EB;
 color:white;
 border-color:#2563EB;
 }
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav { flex-direction: column; gap: 16px; padding: 16px 5%; }
+  nav ul { gap: 16px; flex-wrap: wrap; justify-content: center; }
+
+  .mapa-hero { padding: 40px 5%; }
+  .mapa-hero h1 { font-size: 36px; }
+
+  .mapa-contenido { padding: 30px 5%; margin: 0 10px; }
+}
 
 footer{
 background:#1E3A8A;
