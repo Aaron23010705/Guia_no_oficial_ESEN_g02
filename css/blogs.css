@@ -218,6 +218,20 @@ color:white;
 border-color:#2563EB;
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav { flex-direction: column; gap: 16px; padding: 16px 5%; }
+  nav ul { gap: 16px; flex-wrap: wrap; justify-content: center; }
+
+  .blog-header { padding: 40px 5%; }
+  .blog-header h1 { font-size: 32px; }
+  .blog-header p { font-size: 18px; }
+
+  .blog-contenido { padding: 30px 5%; margin: 0 10px; }
+  .blog-featured { flex-direction: column; }
+  .blog-grid { grid-template-columns: 1fr; }
+}
+
 footer{
 background:#1E3A8A;
 color:white;
