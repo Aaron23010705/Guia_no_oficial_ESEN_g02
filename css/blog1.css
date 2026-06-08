@@ -578,6 +578,28 @@ color:#3B5EA6;
 font-style:italic;
 line-height:1.7;
 }
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav { flex-direction: column; gap: 16px; padding: 16px 5%; }
+  nav ul { gap: 16px; flex-wrap: wrap; justify-content: center; }
+
+  .blog-header h1, .entrada-hero h1 { font-size: 32px; }
+  .entrada-contenido, .blog-contenido { padding: 40px 5%; }
+
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-featured { flex-direction: column; }
+
+  .cierre-split,
+  .intro-split-b2,
+  .intro-split-b4,
+  .cierre-split-b3,
+  .cierre-split-b5 { grid-template-columns: 1fr; }
+
+  .facts-grid { grid-template-columns: 1fr; }
+  .dos-col { grid-template-columns: 1fr; }
+
+  .imagen-intro, .imagen-side { height: 200px; }
+}
 
 /* FOOTER */
 
