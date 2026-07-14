@@ -622,3 +622,24 @@ text-align:center;
 padding:35px;
 margin-top:80px;
 }
+.col-card.positivas{
+background:#EFF6FF;
+border-top:4px solid #2563EB;
+}
+
+.col-card.aprendizaje{
+background:#F8FAFC;
+border-top:4px solid #64748B;
+}
+
+.col-card.aprendizaje h2{
+color:#334155;
+}
+
+.col-card.aprendizaje ul li{
+color:#334155;
+}
+
+.col-card.aprendizaje ul li::before{
+color:#64748B;
+}
