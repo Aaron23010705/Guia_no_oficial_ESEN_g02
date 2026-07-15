@@ -33,6 +33,7 @@ nav ul{
 display:flex;
 gap:35px;
 list-style:none;
+flex-wrap:wrap;
 }
 
 nav a{
@@ -48,9 +49,9 @@ color:#BFDBFE;
 
 /* HERO */
 
-.entrevista-hero{
+.collage-hero{
 background:white;
-padding:70px 10% 60px;
+padding:70px 10% 40px;
 }
 
 .tag-hero{
@@ -66,7 +67,7 @@ letter-spacing:.5px;
 text-transform:uppercase;
 }
 
-.entrevista-hero h1{
+.collage-hero h1{
 font-size:60px;
 font-weight:800;
 color:#1E3A8A;
@@ -74,11 +75,11 @@ line-height:1.1;
 margin-bottom:16px;
 }
 
-.entrevista-hero h1 span{
+.collage-hero h1 span{
 color:#2563EB;
 }
 
-.entrevista-hero p{
+.collage-hero p{
 font-size:22px;
 color:#3B5EA6;
 max-width:650px;
@@ -87,79 +88,29 @@ line-height:1.7;
 
 /* CONTENIDO */
 
-.entrevista-contenido{
-padding:0 10% 60px;
-max-width:1100px;
+.collage-contenido{
+padding:20px 10% 60px;
+max-width:1000px;
 margin:0 auto;
-display:flex;
-flex-direction:column;
-gap:40px;
 }
 
-/* INTRO CARD */
-
-.intro-card{
-display:flex;
-gap:30px;
-background:#EFF6FF;
-border-radius:24px;
-padding:40px;
-align-items:flex-start;
-}
-
-.intro-icon{
-font-size:48px;
-flex-shrink:0;
-margin-top:4px;
-}
-
-.intro-texto h2{
-font-size:24px;
-font-weight:700;
-color:#1E3A8A;
-margin-bottom:16px;
-}
-
-.intro-texto p{
-font-size:17px;
-line-height:1.9;
-color:#374151;
-margin-bottom:12px;
-}
-
-.intro-texto p:last-child{
-margin-bottom:0;
-}
-
-/* VIDEO */
-
-.video-seccion{
-background:#EFF6FF;
-border-radius:24px;
-padding:40px;
-}
-
-.video-seccion h3{
-font-size:22px;
-font-weight:700;
-color:#1E3A8A;
-margin-bottom:24px;
-}
-
-
-
-.video-wrapper iframe{
-position:absolute;
-top:0;
-left:0;
+.collage-wrapper{
 width:100%;
-height:100%;
-border:0;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 10px 40px rgba(0,0,0,.1);
 }
 
-.video-nota{
-margin-top:16px;
-font-size:15px;
+.collage-img{
+width:100%;
+height:auto;
+display:block;
+}
+
+.collage-nota{
+text-align:center;
+margin-top:20px;
+font-size:16px;
 color:#64748B;
 }
 
@@ -200,35 +151,13 @@ margin-top:80px;
 /* RESPONSIVE */
 @media (max-width: 768px) {
   nav { flex-direction: column; gap: 16px; padding: 16px 5%; }
-  nav ul { gap: 16px; flex-wrap: wrap; justify-content: center; }
+  nav ul { gap: 12px; flex-wrap: wrap; justify-content: center; font-size:14px; }
 
-  .entrevista-hero { padding: 40px 5%; }
-  .entrevista-hero h1 { font-size: 32px; }
-  .entrevista-hero p { font-size: 17px; }
+  .collage-hero { padding: 40px 5% 24px; }
+  .collage-hero h1 { font-size: 32px; }
+  .collage-hero p { font-size: 17px; }
 
-  .entrevista-contenido { padding: 0 5% 40px; gap: 24px; }
+  .collage-contenido { padding: 0 5% 40px; }
 
-  .intro-card { flex-direction: column; padding: 28px; gap: 16px; }
-  .intro-icon { font-size: 36px; }
-
-  .video-seccion { padding: 28px; }
-}
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 380px;
-  aspect-ratio: 718 / 1280;
-  margin: 0 auto;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  object-fit: cover;
+  .collage-wrapper { border-radius: 16px; }
 }
